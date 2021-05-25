@@ -1,1 +1,2 @@
 # google-homepage
+In this project i am trying to copy the google homepage. When it is done i should be able to fixate content on the top of the page and using divs to move content on the main part of the page
