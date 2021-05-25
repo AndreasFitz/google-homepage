@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    display: flex;
+    flex-direction: row-reverse;
+  position: absolute;
+  right: 0;
+  align-self: center;
+  overflow: hidden;
+  background-color: white;
+  align-self: center;
+}
+
+/* Style the topnav links */
+.topnav div {
+  color: #000000DE;
+  text-align: center;
+  padding: 2px 5px;
+  text-decoration: none;
+  margin-top: 3px;
+  align-self: center;
+}
+.topnav div a {
+    text-decoration: none;
+    color: #000000DE;
+}
+/* Change color on hover */
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+/* Style the content */
+.content {
+    display: flex;
+    flex-direction: column;
+  background-color: white;
+  margin-top: 200px;
+  padding: 10px;
+}
+.content div {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+#searchbar {
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid black ;
+}
+.content form {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+/* Style the footer */
+.footer {
+  background-color: #b3b0ad1f;
+  padding: 10px;
+  margin-top: auto;
+}
+#top-img{
+    width: 40px;
+    height: auto;
+}
+#google-img {
+    margin-bottom: 20px;
+}
+#buttons {
+    display: flex;
+    flex-direction: row;
+}
+.submit {
+    margin: 10px;
+    padding: 10px;
+    background-color: #b3b0ad1f;
+    border-radius: 5px;
+    border-style: none;
+}
+.submit:hover {
+    border-style: solid;
+    border-color: black;
+}
+#bottom-links {
+    display: flex;
+    flex-direction: row;
+}
+#bottom-links-left {
+    position: absolute;
+    left: 10;
+}
+#bottom-links-right {
+    position: absolute;
+    right: 0;
+}
+#neutral {
+    margin-left: 46%;
+    margin-right: 46%;
+}
+#bottom-links-left a {
+    padding-right: 1vw;
+}
+#bottom-links-right a {
+    padding-right: 1vw;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <div><a href="#"><img src="Skærmbillede 2021-05-25 kl. 09.29.35.png" id="top-img"></a></div>
+  <div><a href="#"><img src="outline_apps_black_24dp.png"></a></div>
+  <div><a href="#">Billeder</a></div>
+  <div><a href="#">Gmail</a></div>
+</div>
+
+<div class="content">
+    <div id="searchbar-main">
+        <div id="google-img">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        <form>
+            <input type="search" name="search" id="searchbar"><br>
+            <div id="buttons">
+                <input type="submit" value="google-søgning" class="submit">
+                <input type="submit" value="Jeg prøver lykken" class="submit">
+            </div>
+            
+        </form>
+    </div>
+
+</div>
+
+<div class="footer">
+  <p>Danmark</p>
+  <hr>
+<div id="bottom-links">
+    <div id="bottom-links-left">
+    <a href="">Om</a>
+    <a href="">Annoncering</a>
+    <a href="">Erhverv</a>
+    <a href="">Sådan fungerer Google søgning</a>
+</div>
+<div id="neutral">
+    <a href="">CO2-neutral siden 2007</a>
+</div>
+<div id="bottom-links-right">
+    <a href="">Priser</a>
+    <a href="">Vilkår</a>
+    <a href="">Indstillinger</a>
+</div>
+</div>
+</div>
+
+</body>
+</html>
